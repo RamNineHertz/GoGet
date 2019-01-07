@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2D535C121E1024C00AAB191 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D535C021E1024C00AAB191 /* AppDelegate.swift */; };
+		F2D535C321E1024C00AAB191 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D535C221E1024C00AAB191 /* ViewController.swift */; };
+		F2D535C621E1024C00AAB191 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D535C421E1024C00AAB191 /* Main.storyboard */; };
+		F2D535C821E1024E00AAB191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D535C721E1024E00AAB191 /* Assets.xcassets */; };
+		F2D535CB21E1024E00AAB191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D535C921E1024E00AAB191 /* LaunchScreen.storyboard */; };
+		F2D535E021E1028100AAB191 /* MybookingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D535D521E1028100AAB191 /* MybookingCell.swift */; };
+		F2D535E121E1028100AAB191 /* MybookingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D535D621E1028100AAB191 /* MybookingCell.xib */; };
+		F2D535E221E1028100AAB191 /* MybookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D535D721E1028100AAB191 /* MybookingVC.swift */; };
+		F2D535E321E1028100AAB191 /* MybookingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D535D821E1028100AAB191 /* MybookingVC.xib */; };
+		F2D535E421E1028100AAB191 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D535DA21E1028100AAB191 /* Constant.swift */; };
+		F2D535E521E1028100AAB191 /* GlobalMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D535DB21E1028100AAB191 /* GlobalMethods.swift */; };
+		F2D535E621E1028100AAB191 /* vehicles.json in Resources */ = {isa = PBXBuildFile; fileRef = F2D535DD21E1028100AAB191 /* vehicles.json */; };
+		F2D535E721E1028100AAB191 /* pods.json in Resources */ = {isa = PBXBuildFile; fileRef = F2D535DE21E1028100AAB191 /* pods.json */; };
+		F2D535E821E1028100AAB191 /* vehicleBookings.json in Resources */ = {isa = PBXBuildFile; fileRef = F2D535DF21E1028100AAB191 /* vehicleBookings.json */; };
+		F2D535EC21E102F800AAB191 /* BookingDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D535EA21E102F800AAB191 /* BookingDetailsVC.swift */; };
+		F2D535ED21E102F800AAB191 /* BookingDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D535EB21E102F800AAB191 /* BookingDetailsVC.xib */; };
+		F2F7E64921E1FED500EF0B01 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2F7E63C21E1FED500EF0B01 /* OpenSans-Semibold.ttf */; };
+		F2F7E64A21E1FED500EF0B01 /* OpenSans-CondBold_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2F7E63D21E1FED500EF0B01 /* OpenSans-CondBold_0.ttf */; };
+		F2F7E64B21E1FED500EF0B01 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2F7E63E21E1FED500EF0B01 /* OpenSans-Light.ttf */; };
+		F2F7E64C21E1FED500EF0B01 /* OpenSans-CondLightItalic_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2F7E63F21E1FED500EF0B01 /* OpenSans-CondLightItalic_0.ttf */; };
+		F2F7E64D21E1FED500EF0B01 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2F7E64021E1FED500EF0B01 /* OpenSans-Italic.ttf */; };
+		F2F7E64E21E1FED500EF0B01 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2F7E64121E1FED500EF0B01 /* OpenSans-ExtraBold.ttf */; };
+		F2F7E64F21E1FED500EF0B01 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2F7E64221E1FED500EF0B01 /* OpenSans-LightItalic.ttf */; };
+		F2F7E65021E1FED500EF0B01 /* OpenSans-CondLight_1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2F7E64321E1FED500EF0B01 /* OpenSans-CondLight_1.ttf */; };
+		F2F7E65121E1FED500EF0B01 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2F7E64421E1FED500EF0B01 /* OpenSans-Bold.ttf */; };
+		F2F7E65221E1FED500EF0B01 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2F7E64521E1FED500EF0B01 /* OpenSans-SemiboldItalic.ttf */; };
+		F2F7E65321E1FED500EF0B01 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2F7E64621E1FED500EF0B01 /* OpenSans-ExtraBoldItalic.ttf */; };
+		F2F7E65421E1FED500EF0B01 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2F7E64721E1FED500EF0B01 /* OpenSans-Regular.ttf */; };
+		F2F7E65521E1FED500EF0B01 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2F7E64821E1FED500EF0B01 /* OpenSans-BoldItalic.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F2D535BD21E1024C00AAB191 /* GoGet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoGet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D535C021E1024C00AAB191 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2D535C221E1024C00AAB191 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2D535C521E1024C00AAB191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2D535C721E1024E00AAB191 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2D535CA21E1024E00AAB191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2D535CC21E1024E00AAB191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2D535D521E1028100AAB191 /* MybookingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MybookingCell.swift; sourceTree = "<group>"; };
+		F2D535D621E1028100AAB191 /* MybookingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MybookingCell.xib; sourceTree = "<group>"; };
+		F2D535D721E1028100AAB191 /* MybookingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MybookingVC.swift; sourceTree = "<group>"; };
+		F2D535D821E1028100AAB191 /* MybookingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MybookingVC.xib; sourceTree = "<group>"; };
+		F2D535DA21E1028100AAB191 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		F2D535DB21E1028100AAB191 /* GlobalMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalMethods.swift; sourceTree = "<group>"; };
+		F2D535DD21E1028100AAB191 /* vehicles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vehicles.json; sourceTree = "<group>"; };
+		F2D535DE21E1028100AAB191 /* pods.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pods.json; sourceTree = "<group>"; };
+		F2D535DF21E1028100AAB191 /* vehicleBookings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vehicleBookings.json; sourceTree = "<group>"; };
+		F2D535EA21E102F800AAB191 /* BookingDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetailsVC.swift; sourceTree = "<group>"; };
+		F2D535EB21E102F800AAB191 /* BookingDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingDetailsVC.xib; sourceTree = "<group>"; };
+		F2F7E63C21E1FED500EF0B01 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		F2F7E63D21E1FED500EF0B01 /* OpenSans-CondBold_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-CondBold_0.ttf"; sourceTree = "<group>"; };
+		F2F7E63E21E1FED500EF0B01 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		F2F7E63F21E1FED500EF0B01 /* OpenSans-CondLightItalic_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-CondLightItalic_0.ttf"; sourceTree = "<group>"; };
+		F2F7E64021E1FED500EF0B01 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		F2F7E64121E1FED500EF0B01 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F2F7E64221E1FED500EF0B01 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		F2F7E64321E1FED500EF0B01 /* OpenSans-CondLight_1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-CondLight_1.ttf"; sourceTree = "<group>"; };
+		F2F7E64421E1FED500EF0B01 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		F2F7E64521E1FED500EF0B01 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		F2F7E64621E1FED500EF0B01 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		F2F7E64721E1FED500EF0B01 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		F2F7E64821E1FED500EF0B01 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2D535BA21E1024C00AAB191 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2D535B421E1024C00AAB191 = {
+			isa = PBXGroup;
+			children = (
+				F2D535BF21E1024C00AAB191 /* GoGet */,
+				F2D535BE21E1024C00AAB191 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2D535BE21E1024C00AAB191 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2D535BD21E1024C00AAB191 /* GoGet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2D535BF21E1024C00AAB191 /* GoGet */ = {
+			isa = PBXGroup;
+			children = (
+				F2F7E63A21E1FED500EF0B01 /* CustomFont */,
+				F2D535D921E1028100AAB191 /* GlobalFiles */,
+				F2D535DC21E1028100AAB191 /* JsonFiles */,
+				F2D535D221E1028100AAB191 /* ViewController */,
+				F2D535C021E1024C00AAB191 /* AppDelegate.swift */,
+				F2D535C221E1024C00AAB191 /* ViewController.swift */,
+				F2D535C421E1024C00AAB191 /* Main.storyboard */,
+				F2D535C721E1024E00AAB191 /* Assets.xcassets */,
+				F2D535C921E1024E00AAB191 /* LaunchScreen.storyboard */,
+				F2D535CC21E1024E00AAB191 /* Info.plist */,
+			);
+			path = GoGet;
+			sourceTree = "<group>";
+		};
+		F2D535D221E1028100AAB191 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F2D535E921E102D500AAB191 /* BookingDetailsVC */,
+				F2D535D321E1028100AAB191 /* MybookingVC */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F2D535D321E1028100AAB191 /* MybookingVC */ = {
+			isa = PBXGroup;
+			children = (
+				F2D535D421E1028100AAB191 /* MybookingCell */,
+				F2D535D721E1028100AAB191 /* MybookingVC.swift */,
+				F2D535D821E1028100AAB191 /* MybookingVC.xib */,
+			);
+			path = MybookingVC;
+			sourceTree = "<group>";
+		};
+		F2D535D421E1028100AAB191 /* MybookingCell */ = {
+			isa = PBXGroup;
+			children = (
+				F2D535D521E1028100AAB191 /* MybookingCell.swift */,
+				F2D535D621E1028100AAB191 /* MybookingCell.xib */,
+			);
+			path = MybookingCell;
+			sourceTree = "<group>";
+		};
+		F2D535D921E1028100AAB191 /* GlobalFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F2D535DA21E1028100AAB191 /* Constant.swift */,
+				F2D535DB21E1028100AAB191 /* GlobalMethods.swift */,
+			);
+			path = GlobalFiles;
+			sourceTree = "<group>";
+		};
+		F2D535DC21E1028100AAB191 /* JsonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F2D535DD21E1028100AAB191 /* vehicles.json */,
+				F2D535DE21E1028100AAB191 /* pods.json */,
+				F2D535DF21E1028100AAB191 /* vehicleBookings.json */,
+			);
+			path = JsonFiles;
+			sourceTree = "<group>";
+		};
+		F2D535E921E102D500AAB191 /* BookingDetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				F2D535EA21E102F800AAB191 /* BookingDetailsVC.swift */,
+				F2D535EB21E102F800AAB191 /* BookingDetailsVC.xib */,
+			);
+			path = BookingDetailsVC;
+			sourceTree = "<group>";
+		};
+		F2F7E63A21E1FED500EF0B01 /* CustomFont */ = {
+			isa = PBXGroup;
+			children = (
+				F2F7E63B21E1FED500EF0B01 /* OpenSans */,
+			);
+			path = CustomFont;
+			sourceTree = "<group>";
+		};
+		F2F7E63B21E1FED500EF0B01 /* OpenSans */ = {
+			isa = PBXGroup;
+			children = (
+				F2F7E63C21E1FED500EF0B01 /* OpenSans-Semibold.ttf */,
+				F2F7E63D21E1FED500EF0B01 /* OpenSans-CondBold_0.ttf */,
+				F2F7E63E21E1FED500EF0B01 /* OpenSans-Light.ttf */,
+				F2F7E63F21E1FED500EF0B01 /* OpenSans-CondLightItalic_0.ttf */,
+				F2F7E64021E1FED500EF0B01 /* OpenSans-Italic.ttf */,
+				F2F7E64121E1FED500EF0B01 /* OpenSans-ExtraBold.ttf */,
+				F2F7E64221E1FED500EF0B01 /* OpenSans-LightItalic.ttf */,
+				F2F7E64321E1FED500EF0B01 /* OpenSans-CondLight_1.ttf */,
+				F2F7E64421E1FED500EF0B01 /* OpenSans-Bold.ttf */,
+				F2F7E64521E1FED500EF0B01 /* OpenSans-SemiboldItalic.ttf */,
+				F2F7E64621E1FED500EF0B01 /* OpenSans-ExtraBoldItalic.ttf */,
+				F2F7E64721E1FED500EF0B01 /* OpenSans-Regular.ttf */,
+				F2F7E64821E1FED500EF0B01 /* OpenSans-BoldItalic.ttf */,
+			);
+			path = OpenSans;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2D535BC21E1024C00AAB191 /* GoGet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2D535CF21E1024E00AAB191 /* Build configuration list for PBXNativeTarget "GoGet" */;
+			buildPhases = (
+				F2D535B921E1024C00AAB191 /* Sources */,
+				F2D535BA21E1024C00AAB191 /* Frameworks */,
+				F2D535BB21E1024C00AAB191 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoGet;
+			productName = GoGet;
+			productReference = F2D535BD21E1024C00AAB191 /* GoGet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2D535B521E1024C00AAB191 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = NineHertz;
+				TargetAttributes = {
+					F2D535BC21E1024C00AAB191 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = F2D535B821E1024C00AAB191 /* Build configuration list for PBXProject "GoGet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2D535B421E1024C00AAB191;
+			productRefGroup = F2D535BE21E1024C00AAB191 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2D535BC21E1024C00AAB191 /* GoGet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2D535BB21E1024C00AAB191 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D535E821E1028100AAB191 /* vehicleBookings.json in Resources */,
+				F2F7E64C21E1FED500EF0B01 /* OpenSans-CondLightItalic_0.ttf in Resources */,
+				F2F7E64A21E1FED500EF0B01 /* OpenSans-CondBold_0.ttf in Resources */,
+				F2D535ED21E102F800AAB191 /* BookingDetailsVC.xib in Resources */,
+				F2D535E321E1028100AAB191 /* MybookingVC.xib in Resources */,
+				F2D535CB21E1024E00AAB191 /* LaunchScreen.storyboard in Resources */,
+				F2F7E64F21E1FED500EF0B01 /* OpenSans-LightItalic.ttf in Resources */,
+				F2F7E65321E1FED500EF0B01 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				F2F7E64921E1FED500EF0B01 /* OpenSans-Semibold.ttf in Resources */,
+				F2F7E64B21E1FED500EF0B01 /* OpenSans-Light.ttf in Resources */,
+				F2F7E65421E1FED500EF0B01 /* OpenSans-Regular.ttf in Resources */,
+				F2F7E65021E1FED500EF0B01 /* OpenSans-CondLight_1.ttf in Resources */,
+				F2D535E121E1028100AAB191 /* MybookingCell.xib in Resources */,
+				F2D535C821E1024E00AAB191 /* Assets.xcassets in Resources */,
+				F2F7E65521E1FED500EF0B01 /* OpenSans-BoldItalic.ttf in Resources */,
+				F2D535E721E1028100AAB191 /* pods.json in Resources */,
+				F2D535E621E1028100AAB191 /* vehicles.json in Resources */,
+				F2F7E65121E1FED500EF0B01 /* OpenSans-Bold.ttf in Resources */,
+				F2D535C621E1024C00AAB191 /* Main.storyboard in Resources */,
+				F2F7E64D21E1FED500EF0B01 /* OpenSans-Italic.ttf in Resources */,
+				F2F7E65221E1FED500EF0B01 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				F2F7E64E21E1FED500EF0B01 /* OpenSans-ExtraBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2D535B921E1024C00AAB191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D535E221E1028100AAB191 /* MybookingVC.swift in Sources */,
+				F2D535C321E1024C00AAB191 /* ViewController.swift in Sources */,
+				F2D535E421E1028100AAB191 /* Constant.swift in Sources */,
+				F2D535E521E1028100AAB191 /* GlobalMethods.swift in Sources */,
+				F2D535C121E1024C00AAB191 /* AppDelegate.swift in Sources */,
+				F2D535EC21E102F800AAB191 /* BookingDetailsVC.swift in Sources */,
+				F2D535E021E1028100AAB191 /* MybookingCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F2D535C421E1024C00AAB191 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2D535C521E1024C00AAB191 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2D535C921E1024E00AAB191 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2D535CA21E1024E00AAB191 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2D535CD21E1024E00AAB191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2D535CE21E1024E00AAB191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2D535D021E1024E00AAB191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GoGet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testing.GoGet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F2D535D121E1024E00AAB191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GoGet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testing.GoGet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2D535B821E1024C00AAB191 /* Build configuration list for PBXProject "GoGet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2D535CD21E1024E00AAB191 /* Debug */,
+				F2D535CE21E1024E00AAB191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2D535CF21E1024E00AAB191 /* Build configuration list for PBXNativeTarget "GoGet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2D535D021E1024E00AAB191 /* Debug */,
+				F2D535D121E1024E00AAB191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2D535B521E1024C00AAB191 /* Project object */;
+}
